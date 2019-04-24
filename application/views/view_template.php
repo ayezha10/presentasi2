@@ -23,7 +23,7 @@
 
     <body>
         <div class="wrapper">
-            <div class="sidebar" data-color="orange" data-image="<?php echo base_url(); ?>assets/img/sidebar-1.jpg">
+            <div class="sidebar" data-color="purple" data-image="<?php echo base_url(); ?>assets/img/sidebar-1.jpg">
                 <!--
             Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
     
@@ -31,7 +31,7 @@
                 -->
                 <div class="logo">
                     <a href="#" class="simple-text">
-                        Network Vokasi Ub
+                        Vokasi UB
                     </a>
                 </div>
                 <div class="sidebar-wrapper">
@@ -42,10 +42,28 @@
                                 <p>Dashboard</p>
                             </a>
                         </li>
+                        <li <?php if ($menu=='profile'){ echo 'class="active"'; } ?>>
+                            <a href="<?php echo base_url() . 'index.php/pages/profile' ?>">
+                                <i class="material-icons">person</i>
+                                <p>Profil Pengguna</p>
+                            </a>
+                        </li>
+                        <li <?php if ($menu=='table'){ echo 'class="active"'; } ?>>
+                            <a href="<?php echo base_url() . 'index.php/pages/tables' ?>">
+                                <i class="material-icons">content_paste</i>
+                                <p>Daftar Anggota</p>
+                            </a>
+                        </li>
+                        <li <?php if ($menu=='maps'){ echo 'class="active"'; } ?>>
+                            <a href="<?php echo base_url() . 'index.php/pages/maps' ?>">
+                                <i class="material-icons">location_on</i>
+                                <p>Peta</p>
+                            </a>
+                        </li>
                         <li class="active-pro">
                             <a href="#">
                                 <i class="material-icons">face</i>
-                                <p>Developer dan IT Support</p>
+                                <p>Tim Developer</p>
                             </a>
                         </li>
                     </ul>
